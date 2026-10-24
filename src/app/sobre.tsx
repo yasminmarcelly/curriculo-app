@@ -6,7 +6,7 @@ import { colors, space, type } from '../theme';
 const app = [
   'Expo SDK 58 e React Native 0.88, com TypeScript',
   'expo-router: navegação por abas baseada em arquivos',
-  'expo-print e expo-sharing: geração e compartilhamento do PDF',
+  'Linking (react-native): abre o PDF gerado pela API e inicia o download',
   'expo-font com Calistoga e Inter (Google Fonts)',
   'expo-constants: leitura da URL da API configurada no app.json',
   'expo-linking e Linking: abrir LinkedIn, GitHub e e-mail',
@@ -18,6 +18,7 @@ const backend = [
   'Express + TypeScript, hospedado no Vercel',
   'PostgreSQL no NeonDB, acessado com o driver pg',
   'zod para validar os dados do CRUD',
+  'pdf-lib para gerar o PDF do currículo',
   'Postman para testar todas as rotas',
 ];
 
@@ -34,8 +35,8 @@ export default function Sobre() {
           <SectionTitle>Funcionalidade extra</SectionTitle>
           <View style={styles.extra}>
             <Text style={type.body}>
-              Download do currículo em PDF: o app monta o documento no próprio celular com os dados exibidos e abre o
-              menu de compartilhamento para salvar ou enviar.
+              Download do currículo em PDF: a API gera o documento com os dados do banco (pdf-lib) e o app abre o
+              endereço, para o celular baixar o arquivo.
             </Text>
           </View>
 

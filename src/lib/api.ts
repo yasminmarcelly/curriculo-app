@@ -1,10 +1,11 @@
 import Constants from 'expo-constants';
 import type { Curriculo, Pessoa } from './types';
 
-const API_URL: string =
+export const API_URL: string = (
   process.env.EXPO_PUBLIC_API_URL ??
   (Constants.expoConfig?.extra?.apiUrl as string | undefined) ??
-  'http://localhost:3000';
+  'http://localhost:3000'
+).replace(/\/+$/, ''); // remove barras no final para não gerar //pessoas
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${API_URL}${path}`);

@@ -30,7 +30,7 @@
     "owner": "yasminmarcelly",
     "slug": "curriculo-app",
     "extra": {
-      "apiUrl": "https://curriculo-api-tau.vercel.app/",
+      "apiUrl": "https://curriculo-api-tau.vercel.app",
       "eas": {
         "projectId": "c50a4574-19f3-41ce-805b-913ba11b5492"
       },
@@ -39,6 +39,12 @@
           "web": true
         }
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c50a4574-19f3-41ce-805b-913ba11b5492"
     }
   }
 }
