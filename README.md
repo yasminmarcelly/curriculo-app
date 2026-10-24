@@ -1,18 +1,13 @@
-# Currículo App
+# Currículo APP
 
-App em React Native + Expo (SDK 58) + Expo Router + TypeScript. Busca os dados na Currículo API.
+ Aplicativo de currículo que busca nome, formações, experiências, projetos, habilidades e idiomas em uma API própria. Dá para alternar entre dois currículos cadastrados no banco e tem como funcionalidade extra o **download do curriculo em PDF**.
 
-## Rodar
-
-```bash
-npm install
-cp .env.example .env                 # EXPO_PUBLIC_API_URL com a URL da API
-npx expo start                       # escaneie o QR Code com o Expo Go
-```
-
-
-## Telas (`src/app`)
-
-`index` (Início) · `sobre` · `academica` · `profissional` · `projetos`
-
-Funcionalidade extra: download do currículo em PDF (`src/lib/pdf.ts`).
+## Tecnologias
+- Expo SDK 58 e React Native 0.88, com TypeScript
+- expo-router: navegação por abas baseada em arquivos
+- Linking (react-native): abre o PDF gerado pela API e inicia o download
+- expo-font com Calistoga e Inter (Google Fonts)
+- expo-constants: leitura da URL da API configurada no app.json
+- expo-linking e Linking: abrir LinkedIn, GitHub e e-mail
+- @expo/vector-icons (Ionicons) e react-native-safe-area-context
+- EAS Update: publicação over-the-air para o Expo Go
