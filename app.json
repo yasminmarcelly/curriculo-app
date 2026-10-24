@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Currículo Yasmin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sharing",
+      "expo-font",
+      "expo-splash-screen"
+    ],
+    "scheme": "curriculo",
+    "owner": "yasminmarcelly",
+    "slug": "curriculo-app",
+    "extra": {
+      "apiUrl": "https://curriculo-api-tau.vercel.app/",
+      "eas": {
+        "projectId": "c50a4574-19f3-41ce-805b-913ba11b5492"
+      },
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      }
+    }
+  }
+}
