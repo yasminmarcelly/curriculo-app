@@ -10,7 +10,6 @@ cp .env.example .env                 # EXPO_PUBLIC_API_URL com a URL da API
 npx expo start                       # escaneie o QR Code com o Expo Go
 ```
 
-A URL da API também pode ficar em `app.json > expo.extra.apiUrl` (usada nas publicações via EAS Update).
 
 ## Telas (`src/app`)
 
